@@ -1,0 +1,22 @@
+uuid: 38cff8a8-2fa4-4bd4-b9a4-8ccbec34bad6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - book_store
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: book_store_content
+theme: book_store
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

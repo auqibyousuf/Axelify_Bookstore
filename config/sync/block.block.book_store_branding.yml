@@ -1,0 +1,25 @@
+uuid: fa38eddd-12f5-4f8f-83bf-1a31ebe6dd11
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - book_store
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: book_store_branding
+theme: book_store
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

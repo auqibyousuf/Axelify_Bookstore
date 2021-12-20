@@ -1,0 +1,22 @@
+uuid: 2df84445-7446-4370-ad17-0d0dc796ef93
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - book_store
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: book_store_messages
+theme: book_store
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

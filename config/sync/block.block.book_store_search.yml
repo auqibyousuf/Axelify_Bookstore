@@ -1,0 +1,23 @@
+uuid: 20abc292-bb5f-430e-ad93-e7f0cb9e633a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - book_store
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: book_store_search
+theme: book_store
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: node_search
+visibility: {  }
