@@ -1,0 +1,20 @@
+uuid: 598705c2-a227-4d92-bc2b-fe94a35a72b4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - book_store
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: book_store_page_title
+theme: book_store
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
