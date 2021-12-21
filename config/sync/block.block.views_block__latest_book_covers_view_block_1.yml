@@ -1,0 +1,24 @@
+uuid: 578a34f6-a566-4649-80d6-758f1d2818df
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_book_covers_view
+  module:
+    - views
+  theme:
+    - book_store
+id: views_block__latest_book_covers_view_block_1
+theme: book_store
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:latest_book_covers_view-block_1'
+settings:
+  id: 'views_block:latest_book_covers_view-block_1'
+  label: 'Latest Book Covers'
+  provider: views
+  label_display: visible
+  views_label: 'Latest Book Covers'
+  items_per_page: none
+visibility: {  }
