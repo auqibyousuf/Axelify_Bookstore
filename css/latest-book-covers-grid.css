@@ -1,0 +1,57 @@
+.latest-book-covers-grid {
+  background-color: var(--color-secondary);
+  color: var(--color-ash);
+  padding: 54px 0;
+}
+
+.latest-book-covers-grid__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.latest-book-covers-grid__title .section-heading {
+  color: var(--color-ash);
+}
+
+.latest-book-covers-grid__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  max-width: 876px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.latest-book-covers-grid__list-item {
+  list-style: none;
+  height: 120px;
+  width: auto;
+  margin: 4px;
+}
+
+.latest-book-covers-grid__list-item-link {
+  height: 100%;
+  width: auto;
+}
+
+.latest-book-covers-grid__list-item-img {
+  height: 100%;
+  width: auto;
+}
+
+.latest-book-covers-grid__cta {
+  margin-top: 32px;
+}
+/*# sourceMappingURL=latest-book-covers-grid.css.map */
