@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../web/themes/custom/book_store/components/tailwind.scss"
-    ],
-    "names": [],
-    "file": "tailwind.css"
-}
