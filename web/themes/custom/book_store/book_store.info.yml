@@ -14,7 +14,7 @@ regions:
 libraries:
   - core/normalize
   - book_store/global
-
+  - book_store/footer
   # - book_store/tailwind
 
 components:

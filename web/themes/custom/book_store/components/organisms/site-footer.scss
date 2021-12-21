@@ -1,0 +1,66 @@
+@import '../_config.all';
+
+.site-footer-primary {
+  padding: 54px 0;
+  background-color: var(--color-footer-background);
+  color: var(--color-grey);
+}
+
+.site-footer-primary__container {
+  flex-direction: column;
+  gap: 4%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include breakpoint($tablet) {
+    flex-direction: row;
+  }
+}
+
+.site-footer-primary__column {
+  margin-bottom: 2rem;
+}
+
+.footer-menu__heading {
+  color: var(--color-grey);
+  margin-bottom: 16px;
+  font-family: var(--font-empasize);
+}
+
+.footer-menu {
+  list-style: none;
+}
+
+.footer-menu__item {
+  padding: 4px 0;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: var(--color-grey);
+  font-size: 90%;
+
+  &--support {
+    text-decoration: underline;
+  }
+
+  &--legal {
+    font-style: italic;
+  }
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
+.footer-container-divider {
+  background-color: var(--color-footer-background);
+}
+
+.site-footer-secondary {
+  padding: 12px 0;
+  background-color: var(--color-footer-background);
+  color: var(--color-text-extra-muted);
+  font-size: 80%;
+}

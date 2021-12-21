@@ -2,7 +2,7 @@ global:
   css:
     theme:
       dist/components/global.css: {}
-      dist/components/organisms/latest-book-covers-grid.css: {}
+
   js:
     dist/components/main.js:
       attributes:
@@ -11,3 +11,12 @@ global:
 #   css:
 #     theme:
 #       dist/components/tailwind.css: {}
+latest-book-covers:
+  css:
+    theme:
+      dist/components/organisms/latest-book-covers-grid.css: {}
+
+footer:
+  css:
+    theme:
+      dist/components/organisms/site-footer.css: {}
