@@ -1,0 +1,14 @@
+@import './02-colors';
+
+@mixin border-bottom-default {
+  border: none;
+  border-bottom: 2px solid $col-border-default;
+  width: 100%;
+}
+
+@mixin border-top-default {
+  border: none;
+  border-top: 2px solid $col-border-default;
+  margin: 16px 0;
+  width: 100%;
+}

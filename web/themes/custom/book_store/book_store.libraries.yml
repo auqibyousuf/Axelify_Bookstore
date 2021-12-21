@@ -2,11 +2,11 @@ global:
   css:
     theme:
       dist/components/global.css: {}
+      dist/components/organisms/latest-book-covers-grid.css: {}
   js:
     dist/components/main.js:
       attributes:
         type: module
-
 # tailwind:
 #   css:
 #     theme:

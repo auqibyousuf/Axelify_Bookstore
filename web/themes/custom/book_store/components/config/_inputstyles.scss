@@ -1,0 +1,61 @@
+@mixin input-text-styles($otherTextSelectors...) {
+  $textTypes: 'email', 'number', 'radio', 'select', 'password', 'search', 'tel',
+    'text', 'url', 'color', 'date', 'datetime', 'datetime-local', 'month',
+    'time', 'week';
+
+  $defaultTextSelectors: 'text', 'textarea';
+
+  %toBeExtendedInsideTheLoopText {
+    @content;
+  }
+
+  @each $textType in $textTypes {
+    input[type='#{$textType}'] {
+      @extend %toBeExtendedInsideTheLoopText;
+    }
+  }
+
+  @each $defaultTextSelector in $defaultTextSelectors {
+    #{$defaultTextSelector} {
+      @extend %toBeExtendedInsideTheLoopText;
+    }
+  }
+
+  @if $otherTextSelectors {
+    @each $textSelector in $otherTextSelectors {
+      #{$textSelector} {
+        @extend %toBeExtendedInsideTheLoopText;
+      }
+    }
+  }
+}
+
+@mixin input-button-styles($otherButtonSelectors...) {
+  $buttonTypes: 'submit', 'reset', 'button';
+
+  $defaultButtonSelectors: 'button', '.button';
+
+  %toBeExtendedInsideTheLoopButton {
+    @content;
+  }
+
+  @each $buttonType in $buttonTypes {
+    input[type='#{$buttonType}'] {
+      @extend %toBeExtendedInsideTheLoopButton;
+    }
+  }
+
+  @each $defaultButtonSelector in $defaultButtonSelectors {
+    #{$defaultButtonSelector} {
+      @extend %toBeExtendedInsideTheLoopButton;
+    }
+  }
+
+  @if $otherButtonSelectors {
+    @each $buttonSelector in $otherButtonSelectors {
+      #{$buttonSelector} {
+        @extend %toBeExtendedInsideTheLoopButton;
+      }
+    }
+  }
+}

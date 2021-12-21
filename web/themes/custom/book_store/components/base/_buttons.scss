@@ -1,0 +1,54 @@
+@import '../_config.all';
+
+@include input-button-styles() {
+  display: inline-block;
+  height: 34px;
+  padding: 0 30px;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--color-ash);
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &.button-primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  &.button-danger {
+    color: var(--color-white);
+    background-color: var(--color-danger);
+    border-color: var(--color-danger);
+  }
+
+  &.button-hollow {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+  }
+
+  &.button-white {
+    background: var(--color-white);
+    color: var(--color-text);
+  }
+
+  &.button-large {
+    min-width: 320px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    filter: brightness(0.9);
+  }
+}

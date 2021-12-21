@@ -1,0 +1,98 @@
+@import '../_config.all';
+
+.overlay {
+  background: var(--color-overlay);
+  bottom: 0;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.overlay--show {
+  display: block;
+}
+
+.visually_hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+
+  @include breakpoint($tablet) {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint($desktop) {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include breakpoint($wide-desktop) {
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &--no-flex {
+    display: block;
+  }
+}
+
+.container-divider {
+  background: var(--color-input-border);
+  height: 1px;
+  overflow: hidden;
+}
+
+.hamburger span {
+  width: 18px;
+  height: 2px;
+  background-color: var(--color-black);
+  display: block;
+  margin-top: 4px;
+}
+
+.hamburger--light span {
+  background-color: var(--color-white);
+}
+
+.hamburger--cross span:first-child {
+  transform-origin: center center;
+  transform: rotate(-45deg);
+}
+
+.hamburger--cross span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+.hamburger--cross span:last-child {
+  transform-origin: center center;
+  margin-top: -8px;
+  transform: rotate(45deg);
+}
+
+.section-heading {
+  font-size: 40px;
+  margin-bottom: 16px;
+  max-width: 763px;
+}

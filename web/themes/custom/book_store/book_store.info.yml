@@ -13,7 +13,8 @@ regions:
 
 libraries:
   - core/normalize
-  # - book_store/global
+  - book_store/global
+
   # - book_store/tailwind
 
 components:
