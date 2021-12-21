@@ -1,0 +1,95 @@
+@import '../_config.all';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=PT+Serif:ital@1&family=Poppins:wght@700&display=swap');
+
+:root {
+  --font-primary: 'Lato', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-empasize: 'PT Serif', serif;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-text: #1c263d;
+  --color-text-headings: #444;
+  --color-text-placeholder: hsl(0, 0%, 50%);
+  --color-text-muted: #6c757d;
+  --color-text-extra-muted: #999;
+
+  --color-input-border: #d1d1d1;
+
+  --color-overlay: rgba(0, 0, 0, 0.6);
+
+  --color-text-light: #eee;
+  --color-ash: #eee;
+  --color-ash-light: #fafbfd;
+  --color-grey: #333;
+
+  --color-footer-background: #f0f2f9;
+
+  --color-primary: #33c3f0;
+  --color-secondary: #003458;
+  --color-secondary-dark: #00293f;
+  --color-danger: #dc3545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-headings);
+}
+
+hr {
+  @include border-top-default;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}
+
+input[autocomplete] {
+  height: auto;
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-size: 1rem;
+  color: var(--color-text-placeholder);
+}
+
+.react-select-wrapper,
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+  display: block;
+}

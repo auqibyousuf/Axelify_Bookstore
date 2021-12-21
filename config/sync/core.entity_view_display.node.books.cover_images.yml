@@ -1,0 +1,29 @@
+uuid: ba16aea6-bd7b-44e1-be29-39aa836c65af
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.cover_images
+    - field.field.node.books.body
+    - field.field.node.books.field_book_image
+    - node.type.books
+  module:
+    - image
+    - user
+id: node.books.cover_images
+targetEntityType: node
+bundle: books
+mode: cover_images
+content:
+  field_book_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  links: true

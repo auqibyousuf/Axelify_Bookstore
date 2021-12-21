@@ -1,0 +1,43 @@
+.latest-book-covers-grid {
+  background-color: var(--color-secondary);
+  color: var(--color-ash);
+  padding: 54px 0;
+}
+
+.latest-book-covers-grid__container {
+  flex-direction: column;
+}
+
+.latest-book-covers-grid__title .section-heading {
+  color: var(--color-ash);
+}
+
+.latest-book-covers-grid__list {
+  display: flex;
+  flex-direction: row;
+  max-width: 876px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.latest-book-covers-grid__list-item {
+  list-style: none;
+  height: 120px;
+  width: auto;
+  margin: 4px;
+}
+
+.latest-book-covers-grid__list-item-link {
+  height: 100%;
+  width: auto;
+}
+
+.latest-book-covers-grid__list-item-img {
+  height: 100%;
+  width: auto;
+}
+
+.latest-book-covers-grid__cta {
+  margin-top: 32px;
+}

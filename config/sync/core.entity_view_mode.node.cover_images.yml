@@ -1,0 +1,10 @@
+uuid: bd99524c-b43c-45a6-bbe8-dc7267b6954f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cover_images
+label: 'Cover Images'
+targetEntityType: node
+cache: true

@@ -1,0 +1,14 @@
+// mobile first min-width apprach
+$tablet: 768px !default; // tablet and above
+$desktop: 992px !default; // desktop and above
+$wide-desktop: 1200px !default; // wide-desktop and above
+
+// desktop first max-width approach
+$upto-desktop: max-width $wide-desktop - 1; // 0 to desktop
+$upto-tablet: max-width $desktop - 1; // 0 to tablet
+$upto-mobile: max-width $tablet - 1; // 0 to mobile
+
+// resolution specific
+$only-mobile: 0 $tablet - 1;
+$only-tablet: $tablet $desktop - 1;
+$only-desktop: $desktop $wide-desktop - 1;

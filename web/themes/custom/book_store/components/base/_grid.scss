@@ -1,0 +1,29 @@
+@import '../_config.all';
+
+.main-content-wrap {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+
+  @include breakpoint($desktop) {
+    flex-direction: row;
+  }
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.sidebar {
+  flex-shrink: 0;
+
+  @include breakpoint($desktop) {
+    width: 350px;
+  }
+
+  .site-block:not(:last-child) {
+    margin-bottom: 24px;
+    padding-bottom: 32px;
+    @include border-bottom-default;
+  }
+}

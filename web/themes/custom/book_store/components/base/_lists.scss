@@ -1,0 +1,15 @@
+ul,
+ol {
+  @include list-clear-all;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+li a {
+  font-weight: bold;
+}
