@@ -1,0 +1,25 @@
+uuid: 04529be0-6d86-4a19-aef1-34abfdc7eb30
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.about
+  module:
+    - system
+  theme:
+    - book_store
+id: about
+theme: book_store
+region: footer
+weight: -8
+provider: null
+plugin: 'system_menu_block:about'
+settings:
+  id: 'system_menu_block:about'
+  label: 'About '
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

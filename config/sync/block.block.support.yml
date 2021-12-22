@@ -1,0 +1,25 @@
+uuid: b242bb7a-586a-4261-af1e-884298b0afa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.support
+  module:
+    - system
+  theme:
+    - book_store
+id: support
+theme: book_store
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:support'
+settings:
+  id: 'system_menu_block:support'
+  label: Support
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

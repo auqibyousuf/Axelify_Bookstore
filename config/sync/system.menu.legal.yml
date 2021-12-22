@@ -1,0 +1,8 @@
+uuid: 290d09c6-0222-43e1-a206-fc4f509019a4
+langcode: en
+status: true
+dependencies: {  }
+id: legal
+label: Legal
+description: 'footer legal'
+locked: false
